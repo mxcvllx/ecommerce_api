@@ -39,6 +39,7 @@ urlpatterns = [
     path('', include('common.urls')),
     path('products/', include('products.urls')),
     path('users/', include('users.urls')),
+    # path('dj-rest-auth/', include('dj_rest_auth.urls')),
 ]
 
 swagger_urls = [
