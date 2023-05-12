@@ -4,8 +4,6 @@ from products import models as products_models
 
 
 class Command(BaseCommand):
-    help = 'Migrate categories from products app to common app'
-
     def handle(self, *args, **options):
         old_cats = products_models.Product.objects.all()
         for cat in old_cats:
